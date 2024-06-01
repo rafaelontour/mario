@@ -20,6 +20,17 @@ botaoReiniciar.addEventListener("click", () => {
     window.location.reload();    
 });
 
+document.getElementById('pular').addEventListener('click', () => {
+    if (!pulando) {
+        pulando = true;
+        mario.classList.add('jump');
+    }
+    
+    setTimeout(() => {
+        mario.classList.remove('jump');
+        pulando = false;
+    }, 498);
+});
 
 document.addEventListener('keydown', (e) => {
     if (e.code === 'Space' && !pulando) {

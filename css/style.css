@@ -8,7 +8,8 @@
 
 #tv {
     position: relative;
-    margin: -140px auto auto auto;
+    left: 50%;
+    transform: translateX(-50%);
     width: 798px;
     height: 100vh;
     
@@ -275,6 +276,10 @@ button {
     background-color: #F6D12E;
     box-shadow: -1px 11px 0px #9d820e;
     transition: 0.1s;
+}
+
+#pular {
+    margin-top: 30px;
 }
 
 button:active {
