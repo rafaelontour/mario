@@ -6,6 +6,8 @@ var botaoReiniciar = document.querySelector('#botao-iniciar-reiniciar');
 var pontos = document.querySelector('#pontos-numero');
 var pontuacao = 0;
 
+var pulando = false;
+
 const audio = new Audio('audio.mp3');
 
 
@@ -20,12 +22,14 @@ botaoReiniciar.addEventListener("click", () => {
 
 
 document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space') {
+    if (e.code === 'Space' && !pulando) {
+        pulando = true;
         mario.classList.add('jump');
     }
     
     setTimeout(() => {
         mario.classList.remove('jump');
+        pulando = false;
     }, 498);
 });
 
