@@ -123,4 +123,4 @@ var loop = setInterval(() => {
         clearInterval(loop);
         clearInterval(somarPontos);
     } 
-}, 0.1);
+}, 10);
