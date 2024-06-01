@@ -54,7 +54,7 @@ var loop = setInterval(() => {
         mario.style.left = '-50px';
         mario.style.width = '220px';
 
-        if (posicaoBottomMario < 41.5) { 
+        if (posicaoBottomMario < 42.2) { 
             mario.src = 'imagens/mario.gif';
             mario.style.left = '0px';
             mario.style.width = '120px';
