@@ -91,7 +91,7 @@ var loop = setInterval(() => {
             arbusto.style.animationPlayState = 'paused';
         });     
         
-        mario.src = '../imagens/game-over.png';
+        mario.src = 'imagens/game-over.png';
         mario.style.bottom = `${posicaoBottomMario}px`;
         mario.style.left = `50px`;
         mario.style.width = '60px';
