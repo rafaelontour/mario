@@ -20,7 +20,8 @@ botaoReiniciar.addEventListener("click", () => {
     window.location.reload();    
 });
 
-document.getElementById('pular').addEventListener('touchend', () => {
+document.getElementById('pular').addEventListener('touchstart', (e) => {
+    e.preventDefault();
     if (!pulando) {
         pulando = true;
         mario.classList.add('jump');

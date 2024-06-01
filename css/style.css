@@ -280,6 +280,7 @@ button {
 
 #pular {
     margin-top: 30px;
+    transition: none;
 }
 
 button:active {
