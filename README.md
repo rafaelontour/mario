@@ -2,7 +2,7 @@
 [Clique aqui](https://rafaelontour.github.io/mario/)
 
 Tecla ESPAÇO para pular.
-Ainda não funciona para dispositivo móvel.
+O botão pular é para teste em dispositivo móvel.
 Cada pulo correto são 50 pontos.
+![image](![image](https://github.com/rafaelontour/mario/assets/86817231/d37f00cd-c912-43fc-91fd-6140b4388115)
 
-![image](https://github.com/rafaelontour/mario/assets/86817231/a45b96d3-cf09-4ce9-8f47-a8464a29cfa9)
