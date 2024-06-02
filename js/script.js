@@ -9,8 +9,8 @@ var pontuacao = 0;
 var pulando = false;
 var perdeu = false;
 
-const audio = new Audio('../sons/audio.mp3');
-const audioPulo = new Audio('../sons/pulo.m4a');
+const audio = new Audio('sons/audio.mp3');
+const audioPulo = new Audio('sons/pulo.m4a');
 
 
 window.onload = () => {
@@ -131,7 +131,7 @@ var loop = setInterval(() => {
 
         botaoReiniciar.style.color = "#2C2316";
 
-        const audioPerdeu = new Audio('../sons/perdeu.mp3');
+        const audioPerdeu = new Audio('sons/perdeu.mp3');
         perdeu = true;
 
         audio.pause();
