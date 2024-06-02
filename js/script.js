@@ -131,7 +131,7 @@ var loop = setInterval(() => {
 
         botaoReiniciar.style.color = "#2C2316";
 
-        const audioPerdeu = new Audio('sons/perdeu.mp3');
+        const audioPerdeu = new Audio('perdeu.mp3');
         perdeu = true;
 
         audio.pause();
