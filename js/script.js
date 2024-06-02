@@ -9,8 +9,8 @@ var pontuacao = 0;
 var pulando = false;
 var perdeu = false;
 
-const audio = new Audio('sons/audio.mp3');
-const audioPulo = new Audio('sons/pulo.m4a');
+const audio = new Audio('audio.mp3');
+const audioPulo = new Audio('pulo.m4a');
 
 
 window.onload = () => {
