@@ -7,8 +7,10 @@ var pontos = document.querySelector('#pontos-numero');
 var pontuacao = 0;
 
 var pulando = false;
+var perdeu = false;
 
-const audio = new Audio('audio.mp3');
+const audio = new Audio('../sons/audio.mp3');
+const audioPulo = new Audio('../sons/pulo.m4a');
 
 
 window.onload = () => {
@@ -22,7 +24,12 @@ botaoReiniciar.addEventListener("click", () => {
 
 document.getElementById('pular').addEventListener('touchstart', (e) => {
     e.preventDefault();
+    
+    
     if (!pulando) {
+        if (!perdeu) {
+            audioPulo.play();
+        }
         pulando = true;
         mario.classList.add('jump');
     }
@@ -30,11 +37,18 @@ document.getElementById('pular').addEventListener('touchstart', (e) => {
     setTimeout(() => {
         mario.classList.remove('jump');
         pulando = false;
-    }, 498);
+        audioPulo.pause();
+        audioPulo.currentTime = 0;
+    }, 490);
 });
 
 document.addEventListener('keydown', (e) => {
+
+    
     if (e.code === 'Space' && !pulando) {
+        if (!perdeu) {
+            audioPulo.play();
+        }
         pulando = true;
         mario.classList.add('jump');
     }
@@ -42,6 +56,8 @@ document.addEventListener('keydown', (e) => {
     setTimeout(() => {
         mario.classList.remove('jump');
         pulando = false;
+        audioPulo.pause();
+        audioPulo.currentTime = 0;
     }, 498);
 });
 
@@ -115,7 +131,8 @@ var loop = setInterval(() => {
 
         botaoReiniciar.style.color = "#2C2316";
 
-        const audioPerdeu = new Audio('perdeu.mp3');
+        const audioPerdeu = new Audio('../sons/perdeu.mp3');
+        perdeu = true;
 
         audio.pause();
         audioPerdeu.play();
